@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Predict Salary</h1>
+    <form method="post" action="/predict">
+        <label for="age">Enter Age:</label>
+        <input type="number" id="age" name="age" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
